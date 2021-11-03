@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(panda_gazebo)
-
+find_package(orocos_kdl)
 find_package(catkin
   REQUIRED COMPONENTS
     panda_hardware_interface
@@ -15,7 +15,7 @@ find_package(catkin
     std_msgs
     kdl_parser
     tf_conversions
-    orocos_kdl
+    
     panda_sim_controllers
     panda_sim_custom_action_server
 )
